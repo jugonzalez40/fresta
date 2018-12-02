@@ -1,31 +1,26 @@
-<div fxLayout="row" fxLayoutAlign="center center">
-  <div fxLayout="column" fxFlex="30%">
-    <br>
-    <br>
-    <br>
-    <div fxFlex>
-      <mat-card class='micard'>
-        <!--<img mat-card-image src="https://media.giphy.com/media/l3fQjHugtGrGhHs5y/giphy.gif" alt="">-->
-        <h1 class='brand'>
-          MONDO
-        </h1>
-        <mat-card-content>
-          <form class="example-form" fxLayout='column'>
-            <mat-form-field fxFlex>
-              <input matInput placeholder="Mondo user">
-            </mat-form-field>
-            <mat-form-field class="example-full-width" fxFlex>
-              <input matInput placeholder="Mondo password">
-            </mat-form-field>
-          </form>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-stroked-button color="primary">SING IN</button>
-        </mat-card-actions>
-      </mat-card>
+<div fxLayout="row" class='full'>
+  <div fxLayout="column" fxFlex="20%" fxFlex.xs="100%">
 
-      <!--<-->
+    <div fxFlex class="login-grid">
+      <img src="https://media.giphy.com/media/l3fQjHugtGrGhHs5y/giphy.gif" alt="">
+      <h1 class='brand'>
+        MONDO
+      </h1>
+
+          <form class="example-form" fxLayout='column'>
+        <mat-form-field fxFlex>
+          <input matInput placeholder="Mondo user">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" fxFlex>
+          <input matInput placeholder="Mondo password">
+        </mat-form-field>
+      </form>
+      <button mat-stroked-button color="primary">SING IN</button>
+
     </div>
+  </div>
+  <div fxFlex="70%">
+    <img *ngFor="let item of images" src="{{item}}" alt="">
   </div>
 </div>
 
